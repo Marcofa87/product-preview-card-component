@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: #23252c;
+  width: 20%;
+  margin: 50px auto;
+  font-family: Inter;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.main-content {
+  background-color: #1a1b21;
+  color: wheat;
+}
+
+.main-content h1 {
+  color: #fff;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main-content h4 {
+  color: #f3bf99;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.presentation h1,
+h4,
+a {
+  padding: 10px;
+}
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.presentation img {
+  max-width: 100%;
+  max-height: 450px;
+}
+
+.presentation a {
+  align-items: center;
+  margin-top: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px 0;
+  max-width: 100%;
+}
+
+.buttons img {
+  height: 20px;
+  width: 20px;
+}
+
+.button-1,
+.button-2 {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  padding: 15px;
+  margin: 0 15px;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.button-1 {
+  background-color: #ffffff;
+}
+
+.button-1 a {
+  color: #374151;
+}
+
+.button-2 {
+  background-color: #5093e2;
+}
+
+.about,
+.interests {
+  padding: 20px;
+}
+
+.about h2,
+.interests h2 {
+  margin-bottom: 20px;
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.about p,
+.interests p {
+  color: #dcdcdc;
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 15.36px */
+}
+
+.footer {
+  background: #161619;
+  display: flex;
+  height: 80px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer img {
+  height: 50px;
+  width: 50px;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 80%;
+  }
+
+  .button-1,
+  .button-2 {
+    width: 100%;
+  }
+
+  .main-content h1 {
+    font-size: 20px;
+  }
+
+  .main-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .about h2,
+  .interests h2 {
+    font-size: 1.2rem;
+  }
+
+  .about p,
+  .interests p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    width: 60%;
+  }
+
+  .main-content h1 {
+    font-size: 22px;
+  }
+
+  .main-content h4 {
+    font-size: 1.3rem;
+  }
+
+  .about h2,
+  .interests h2 {
+    font-size: 1.3rem;
+  }
+
+  .about p,
+  .interests p {
+    font-size: 1rem;
+  }
+}
