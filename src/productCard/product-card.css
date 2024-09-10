@@ -60,6 +60,7 @@ button {
   color: var(--neutral-white);
   font-weight: var(--font-weight-bold);
   border: none;
+  margin-bottom: 2rem;
 }
 
 button img {
