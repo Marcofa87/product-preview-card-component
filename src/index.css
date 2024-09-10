@@ -19,6 +19,13 @@
   margin: 20px auto;
 }
 
+@media (min-width: 768px) {
+  .grid-container {
+    display: flex;
+    border-radius: 10px;
+  }
+}
+
 /* ### Primary
 
 - Dark cyan: hsl(158, 36%, 37%)

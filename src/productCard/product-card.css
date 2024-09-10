@@ -13,6 +13,7 @@
   margin: 0 auto;
   background-color: var(--neutral-white);
   font-weight: var(--font-weight);
+  border-radius: 0 0 10px 10px;
 }
 
 .text-container-product-description {
@@ -66,9 +67,19 @@ button {
 }
 
 button:hover {
-  background-color: var(--primary-color-dark-blue);
+  background-color: var(--neutral-very-dark-blue);
 }
 
 button img {
   margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .card-container picture img {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .text-container {
+    border-radius: 0 10px 10px 0;
+  }
 }
