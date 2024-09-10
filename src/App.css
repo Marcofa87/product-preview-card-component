@@ -1,6 +1,16 @@
 @import "./index.css";
 
-:root {
+body {
   font-family: var(--font-family-montserrat);
   background-color: var(--primary-color-cream);
+  font-size: var(--font-size);
+}
+
+h2 {
+  color: var(--neutral-very-dark-blue);
+  font-family: var(--font-family-fraunces);
+}
+
+p {
+  color: var(--neutral-dark-graysh-blue);
 }

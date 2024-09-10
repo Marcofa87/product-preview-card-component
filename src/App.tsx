@@ -1,9 +1,12 @@
 import "./App.css";
+import ProductCard from "./productCard/ProductCard";
 
 function App() {
   return (
     <>
-      <h1>Hello World!</h1>
+      <div className="grid-container">
+        <ProductCard />
+      </div>
     </>
   );
 }

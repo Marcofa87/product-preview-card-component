@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
 :root {
   --font-family-montserrat: Montserrat, sans-serif;
   --font-family-fraunces: Fraunces, sans-serif;
@@ -6,9 +8,15 @@
   --neutral-very-dark-blue: hsl(212, 21%, 14%);
   --neutral-dark-graysh-blue: hsl(228, 12%, 48%);
   --neutral-white: hsl(0, 0%, 100%);
-  --font-size: 15px;
+  --font-size: 14px;
   --font-weight: 500;
   --font-weight-bold: 700;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  width: 90%;
+  margin: 20px auto;
 }
 
 /* ### Primary
