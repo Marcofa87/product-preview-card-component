@@ -61,6 +61,12 @@ button {
   font-weight: var(--font-weight-bold);
   border: none;
   margin-bottom: 2rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: var(--primary-color-dark-blue);
 }
 
 button img {
