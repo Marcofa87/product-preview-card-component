@@ -19,10 +19,11 @@
   margin: 20px auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .grid-container {
     display: flex;
     border-radius: 10px;
+    font-size: clamp(1rem, 1rem + 0.8vw, 3rem);
   }
 }
 

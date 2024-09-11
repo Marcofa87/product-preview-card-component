@@ -14,31 +14,33 @@
   background-color: var(--neutral-white);
   font-weight: var(--font-weight);
   border-radius: 0 0 10px 10px;
+  font-size: 1rem;
 }
 
 .text-container-product-description {
-  padding: 20px;
+  padding: 1.25rem;
 }
+
 .text-container-product-description :first-child {
   text-align: left;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.2em;
 }
 
 .text-container-product-description .product-description {
-  line-height: 1.5rem;
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
 .price {
   display: flex;
   justify-content: flex-start;
-  display: flex;
   align-items: center;
 }
 
 .price :first-child {
-  margin-right: 2rem;
+  margin-right: 1.25rem;
   margin-left: 1rem;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: var(--primary-color-dark-cyan);
   font-weight: var(--font-weight-bold);
   font-family: var(--font-family-fraunces);
@@ -46,6 +48,7 @@
 
 .price :nth-child(2) {
   text-decoration: line-through;
+  font-size: 1.25rem;
 }
 
 .button-cart {
@@ -55,11 +58,12 @@
 
 button {
   background-color: var(--primary-color-dark-cyan);
-  height: 50px;
+  height: 3.125rem;
   width: 90%;
   border-radius: 10px;
   color: var(--neutral-white);
   font-weight: var(--font-weight-bold);
+  font-size: 1rem;
   border: none;
   margin-bottom: 2rem;
   cursor: pointer;
@@ -74,12 +78,62 @@ button img {
   margin-right: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+  .card-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    font-size: 1.125rem;
+  }
+
+  .card-container picture,
+  .text-container {
+    flex: 1;
+    width: 50%;
+  }
+
   .card-container picture img {
     border-radius: 10px 0 0 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 
   .text-container {
     border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    width: 50%;
+  }
+
+  .text-container-product-description {
+    flex: 1;
+    padding: 1rem;
+    font-size: 2.5rem;
+  }
+
+  .text-container-product-description .product-description {
+    letter-spacing: 0.4rem;
+    line-height: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .price :first-child {
+    font-size: 2rem;
+  }
+
+  .price :nth-child(2) {
+    font-size: 1.5rem;
+  }
+
+  .button-cart {
+    padding: 1.5rem;
+  }
+
+  button {
+    height: 3.5rem;
+    font-size: 1.125rem;
   }
 }
